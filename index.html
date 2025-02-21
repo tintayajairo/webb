@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trans UPDS</title>
+
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Fondo elegante */
+        body {
+            background: linear-gradient(135deg, #f8f9fa, #dbeafe);
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Estilo del encabezado con animación */
+        .header-custom {
+            background: linear-gradient(135deg, #007bff, #9500ff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Estilo mejorado de la imagen */
+        .bus-image {
+            max-width: 600px; /* Tamaño máximo más grande */
+            width: 100%; /* Se adapta al contenedor */
+            height: auto; /* Mantiene proporción */
+            transition: transform 0.5s ease;
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+        }
+
+        .bus-image:hover {
+            transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+        }
+
+        /* Botón elegante */
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.2rem;
+            padding: 12px 25px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* Pie de página */
+        footer {
+            background: #003366;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección de Bienvenida con animación -->
+    <header class="header-custom">
+        Bienvenidos a Trans UPDS
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container text-center mt-4">
+        <!-- Imagen centrada y más grande -->
+        <div class="d-flex justify-content-center gap-3 my-4">
+            <img src="/{552DB4FE-98F4-46E6-85B4-414EB90DD072}.png" alt="Bus Trans UPDS" class="bus-image">
+        </div>
+        
+        <!-- Botón con efecto hover -->
+        <div class="mt-4">
+            <a href="login.html" class="btn btn-custom">Iniciar Sesión</a>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

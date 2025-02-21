@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Cajero - Trans UPDS</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        body {  
+            background: #f8f9fa;
+            color: #212529;
+            font-family: 'Arial', sans-serif;
+            .header-custom {
+            background: linear-gradient(135deg, #002fff, #00aeff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+}
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .navbar {
+            background-color: white !important;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: black !important;
+            font-weight: bold;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #007bff !important;
+        }
+        .card-custom {
+            background: white;
+            color: black;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        .btn-warning {
+            background-color: #ffc107;
+            border: none;
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+            color: black;
+        }
+        .btn-warning:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-custom">
+        <h1 class="animated-title">Panel de Cajero</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="venta.html">Venta de Pasajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container text-center mt-5">
+        <div class="card-custom">
+            <h2>Bienvenido, Cajero</h2>
+            <p>Seleccione una opción para continuar:</p>
+            <div class="d-flex justify-content-center gap-4 mt-4">
+                <a href="venta.html" class="btn btn-primary btn-lg">Vender Pasajes</a>
+                <a href="ventas_realizadas.html" class="btn btn-warning btn-lg">Ver Ventas</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

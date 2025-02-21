@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Pasajes - Trans UPDS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Venta de Pasajes - Trans UPDS</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Trans UPDS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="cajero.html">Panel Cajero</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ventas_realizadas.html">Ver Ventas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Cerrar Sesión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <h2 class="text-center">Registrar Venta de Pasaje</h2>
+
+        <form id="ventaForm" class="mt-4">
+            <!-- Datos del pasajero -->
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre del Pasajero</label>
+                <input type="text" id="nombre" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="ci" class="form-label">Cédula de Identidad</label>
+                <input type="text" id="ci" class="form-control" required>
+            </div>
+
+            <!-- Selección de destino -->
+            <div class="mb-3">
+                <label for="destino" class="form-label">Destino</label>
+                <select id="destino" class="form-select" required>
+                    <option value="">Seleccione un destino</option>
+                    <option value="Santa Cruz - La Paz" data-precio="150">Santa Cruz - La Paz (Bs. 150)</option>
+                    <option value="Cochabamba - Sucre" data-precio="120">Cochabamba - Sucre (Bs. 120)</option>
+                    <option value="Oruro - Potosí" data-precio="100">Oruro - Potosí (Bs. 100)</option>
+                </select>
+            </div>
+
+            <!-- Selección de asiento -->
+            <div class="mb-3">
+                <label for="asiento" class="form-label">Número de Asiento</label>
+                <input type="number" id="asiento" class="form-control" min="1" max="50" required>
+            </div>
+
+            <!-- Precio del pasaje (se llena automáticamente según destino) -->
+            <div class="mb-3">
+                <label for="precio" class="form-label">Precio del Pasaje (Bs.)</label>
+                <input type="text" id="precio" class="form-control" readonly>
+            </div>
+
+            <!-- Botón de confirmar venta -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-success btn-lg">Confirmar Venta</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="text-center mt-5 p-3 bg-dark text-white">
+        <p>&copy; 2025 Trans UPDS. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
